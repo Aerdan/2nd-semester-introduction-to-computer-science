@@ -5,9 +5,7 @@
 Students will be able to...
 
 * Define and identify: **method**, **`__str__`**, **`__add__`**, **operator overloading**.
-* Create a class with an `__init__` method.
-* Understand and use the `self` argument.
-* Instantiate a class with an argument.
+* Apply the `self` argument.
 
 ## Materials/Preparation
 
@@ -43,7 +41,7 @@ Students will be able to...
 
 #### Discussion
 
-* Ask students what method we have already seen and used previously. (`init`)
+* Ask students what method we have already seen and used previously. (`__init__`)
 * Ask students how they would distinguish between the two time variables.
 
 #### Instruction - `__str__`
