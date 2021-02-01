@@ -19,7 +19,7 @@ Students will be able to...
 
 ## Materials/Preparation
 
-* [7.02 Slide Deck](https://github.com/TEALSK12/2nd-semester-introduction-to-computer-science/raw/master/units/7_unit/slidedecks/Intro%20Python%207.02%20TEALS.pptx)
+* [7.03 Slide Deck](https://github.com/TEALSK12/2nd-semester-introduction-to-computer-science/raw/master/units/7_unit/slidedecks/Intro%20Python%207.03%20TEALS.pptx)
 * [Do Now][]
 * [Lab - Pet Class][] ([docx][]) ([pdf][])
 * [Associated Reading](https://tealsk12.github.io/2nd-semester-introduction-to-computer-science/readings.md.html#associatedreadings/7.2)
@@ -54,11 +54,32 @@ Students will be able to...
 * `__init__` is a special function that is called when the class is first initialized.
 * If there is a print statement added to the `__init__` method, when would it get printed?
 
+#### Class Attributes
+
+* Class attributes are defined outside of the `__init__` method.
+* Here is an example of Mammal Class attribute `warm_blooded`.
+
+```python
+class Mammal:
+    """Represents a mammal."""
+    warm_blooded = True
+```
+
 #### Instruction - `self`
 
 * `self` is a way of referring to the instance within a function.
-* What does `self.name` do and how does that relate to what `my_pet.name` does?
+* What does `self.species` do and how does that relate to what `my_pet.species` does?
 * Previously we had added attributes *after* the class was instantiated, but `self` allows for us to assign those at once in a single method.
+* Here is an object attribute defined inside the `__init__` method (`species`).
+
+```python
+class Mammal:
+    """Represents a mammal."""
+    warm_blooded = True
+
+    def __init__(self, species):
+        self.species = species
+```
 
 ### 3. Lab
 
@@ -76,12 +97,12 @@ As with the previous lesson, be prepared for some students to struggle with the 
 
 ## Forum discussion
 
-[Lesson 7.02: User-Defined Types, Part 2 (TEALS Discourse Account Required)](https://forums.tealsk12.org/c/2nd-semester-unit-7-classes/lesson-7-02-user-defined-types-part-2)
+[Lesson 7.03: User-Defined Types, Part 2 (TEALS Discourse Account Required)](https://forums.tealsk12.org/c/2nd-semester-unit-7-classes/lesson-7-02-user-defined-types-part-2)
   
 [Do Now]:do_now.md.html
 [Lab - Pet Class]:lab.md.html
 
-[pdf]: https://github.com/TEALSK12/2nd-semester-introduction-to-computer-science/raw/master/units/7_unit/02_lesson/lab.pdf
-[docx]: https://github.com/TEALSK12/2nd-semester-introduction-to-computer-science/raw/master/units/7_unit/02_lesson/lab.docx
+[pdf]: https://github.com/TEALSK12/2nd-semester-introduction-to-computer-science/raw/master/units/7_unit/03_lesson/lab.pdf
+[docx]: https://github.com/TEALSK12/2nd-semester-introduction-to-computer-science/raw/master/units/7_unit/03_lesson/lab.docx
 
 <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>

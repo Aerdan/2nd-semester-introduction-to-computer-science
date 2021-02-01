@@ -41,11 +41,6 @@ Students will be able to...
 * A function inside of a class.
 * The first argument is always `self`.
 
-#### Discussion
-
-* Ask students what method we have already seen and used previously. (`init`)
-* Ask students how they would distinguish between the two time variables.
-
 #### Instruction - `__str__`
 
 * Need a method called `__str__`.

@@ -46,11 +46,32 @@ Students will be able to...
 * `__init__` is a special function that is called when the class is first initialized.
 * If there is a print statement added to the `__init__` method, when would it get printed?
 
+#### Class Attributes
+
+* Class attributes are defined outside of the `__init__` method.
+* Here is an example of Mammal Class attribute `warm_blooded`.
+
+```python
+class Mammal:
+    """Represents a mammal."""
+    warm_blooded = True
+```
+
 #### Instruction - `self`
 
 * `self` is a way of referring to the instance within a function.
-* What does `self.name` do and how does that relate to what `my_pet.name` does?
+* What does `self.species` do and how does that relate to what `my_pet.species` does?
 * Previously we had added attributes *after* the class was instantiated, but `self` allows for us to assign those at once in a single method.
+* Here is an object attribute defined inside the `__init__` method (`species`).
+
+```python
+class Mammal:
+    """Represents a mammal."""
+    warm_blooded = True
+
+    def __init__(self, species):
+        self.species = species
+```
 
 ### 3. Lab
 
