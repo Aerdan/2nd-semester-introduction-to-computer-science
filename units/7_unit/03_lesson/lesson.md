@@ -37,10 +37,6 @@ Students will be able to...
 
 #### Discuss the Do Now
 
-* Ask Students the following:
-  * What is the name of the class?
-  * Where does the Pet object get instantiated?
-
 #### Instruction - `__init__`
 
 * `__init__` is a special function that is called when the class is first initialized.
